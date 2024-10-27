@@ -2,12 +2,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -107,23 +109,76 @@ public class MyTestCases {
 
 	@Test(priority = 8)
 	public void randomlyChangeTheLanguage() throws InterruptedException {
+//test number 3,4,5,6
 
 		String[] myWebsites = { "https://www.almosafer.com/ar", "https://www.almosafer.com/en" };
+		String[] randomEnCountry = { "Dubai", "Jeddah", "Riyadh" };
+		String[] randomArCountry = { "دبي", "جدة" };
+
+		int indexRandomArCountry = rand.nextInt(randomArCountry.length);
+		int indexRandomEnCountry = rand.nextInt(randomEnCountry.length);
+
 		int randomIndex = rand.nextInt(myWebsites.length);
 		driver.get(myWebsites[randomIndex]);
-		
+
+		WebElement HotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
+
+		HotelTab.click();
+		WebElement HotelSearchBar = driver.findElement(By.cssSelector(".sc-phbroq-2.uQFRS.AutoComplete__Input"));
+
 //		if (driver.getCurrentUrl().contains("ar"))
 		if (driver.getCurrentUrl().equals("https://www.almosafer.com/ar")) {
 			String ActualLaguage = driver.findElement(By.tagName("html")).getAttribute("lang");
 			String ExpectedLanguage = "ar";
 
 			org.testng.Assert.assertEquals(ActualLaguage, ExpectedLanguage);
+			HotelSearchBar.sendKeys(randomArCountry[indexRandomArCountry]);
+
 		} else {
 			String ActualLaguage = driver.findElement(By.tagName("html")).getAttribute("lang");
 			String ExpectedLanguage = "en";
 
 			org.testng.Assert.assertEquals(ActualLaguage, ExpectedLanguage);
+			HotelSearchBar.sendKeys(randomEnCountry[indexRandomEnCountry]);
+
 		}
+		Thread.sleep(2000);
+		WebElement CitiesList = driver.findElement(By.cssSelector(".sc-phbroq-4.gGwzVo.AutoComplete__List"));
+		CitiesList.findElements(By.tagName("li")).get(1).click();
+
+		WebElement selectNumOfRoom = driver.findElement(By.cssSelector(".sc-tln3e3-1.gvrkTi"));
+		Select selector = new Select(selectNumOfRoom);
+		int randomRoom = rand.nextInt(2);
+		selector.selectByIndex(randomRoom);
+
+		WebElement SearchButton = driver.findElement(By.xpath("//button[@data-testid='HotelSearchBox__SearchButton']"));
+		SearchButton.click();
+
+		Thread.sleep(30000);
+
+	}
+
+	@Test(priority = 9)
+
+	public void checkThatThePageIsFullyLoaded() {
+		WebElement SearchResult = driver.findElement(By.xpath("//span[@data-testid='srp_properties_found']"));
+
+		boolean ActualResult = SearchResult.getText().contains("found") || SearchResult.getText().contains("مكان");
+
+		boolean ExpectedResult = true;
+
+		org.testng.Assert.assertEquals(ActualResult, ExpectedResult);
+	}
+
+	@Test(priority = 10)
+	public void CheckTheSortOption() throws InterruptedException {
+		Thread.sleep(2000);
+
+		WebElement LowestPriceButton = driver.findElement(By.xpath("//div[@data-testid='srp_sort_LOWEST_PRICE']"));
+
+		LowestPriceButton.click();
+
+	
 	}
 
 }
