@@ -6,6 +6,7 @@
       <class name="MyTestCases">
         <methods>
           <include name="CheckTheSortOption"/>
+          <include name="checkThatThePageIsFullyLoaded"/>
           <include name="mysetup"/>
         </methods>
       </class> <!-- MyTestCases -->

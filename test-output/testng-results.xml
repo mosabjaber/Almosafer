@@ -2,52 +2,52 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-27T23:50:41 EET" name="Default suite" finished-at="2024-10-27T23:51:24 EET" duration-ms="43153">
+  <suite started-at="2024-11-08T23:56:38 EET" name="Default suite" finished-at="2024-11-08T23:57:45 EET" duration-ms="67405">
     <groups>
     </groups>
-    <test started-at="2024-10-27T23:50:41 EET" name="Default test" finished-at="2024-10-27T23:51:24 EET" duration-ms="43153">
+    <test started-at="2024-11-08T23:56:38 EET" name="Default test" finished-at="2024-11-08T23:57:45 EET" duration-ms="67405">
       <class name="MyTestCases">
-        <test-method is-config="true" signature="mysetup()[pri:0, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:41 EET" name="mysetup" finished-at="2024-10-27T23:50:45 EET" duration-ms="3658" status="PASS">
+        <test-method is-config="true" signature="mysetup()[pri:0, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:38 EET" name="mysetup" finished-at="2024-11-08T23:56:40 EET" duration-ms="1836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mysetup -->
-        <test-method signature="checkDefaultLanguage()[pri:1, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="checkDefaultLanguage" finished-at="2024-10-27T23:50:45 EET" duration-ms="36" status="PASS">
+        <test-method signature="checkDefaultLanguage()[pri:1, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:40 EET" name="checkDefaultLanguage" finished-at="2024-11-08T23:56:43 EET" duration-ms="3368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDefaultLanguage -->
-        <test-method signature="checkDefaultCurrency()[pri:2, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="checkDefaultCurrency" finished-at="2024-10-27T23:50:45 EET" duration-ms="20" status="PASS">
+        <test-method signature="checkDefaultCurrency()[pri:2, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:43 EET" name="checkDefaultCurrency" finished-at="2024-11-08T23:56:46 EET" duration-ms="3369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDefaultCurrency -->
-        <test-method signature="CheckContactNumber()[pri:3, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="CheckContactNumber" finished-at="2024-10-27T23:50:45 EET" duration-ms="21" status="PASS">
+        <test-method signature="CheckContactNumber()[pri:3, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:46 EET" name="CheckContactNumber" finished-at="2024-11-08T23:56:50 EET" duration-ms="3491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckContactNumber -->
-        <test-method signature="checkQitafLogo()[pri:4, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="checkQitafLogo" finished-at="2024-10-27T23:50:45 EET" duration-ms="49" status="PASS">
+        <test-method signature="checkQitafLogo()[pri:4, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:50 EET" name="checkQitafLogo" finished-at="2024-11-08T23:56:53 EET" duration-ms="3364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkQitafLogo -->
-        <test-method signature="checkHotelTabIsNotSelected()[pri:5, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="checkHotelTabIsNotSelected" finished-at="2024-10-27T23:50:45 EET" duration-ms="25" status="PASS">
+        <test-method signature="checkHotelTabIsNotSelected()[pri:5, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:53 EET" name="checkHotelTabIsNotSelected" finished-at="2024-11-08T23:56:57 EET" duration-ms="3372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHotelTabIsNotSelected -->
-        <test-method signature="checkDepatureDate()[pri:6, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="checkDepatureDate" finished-at="2024-10-27T23:50:45 EET" duration-ms="20" status="PASS">
+        <test-method signature="checkDepatureDate()[pri:6, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:56:57 EET" name="checkDepatureDate" finished-at="2024-11-08T23:57:00 EET" duration-ms="3336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDepatureDate -->
-        <test-method signature="checkReturnDate()[pri:7, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="checkReturnDate" finished-at="2024-10-27T23:50:45 EET" duration-ms="18" status="PASS">
+        <test-method signature="checkReturnDate()[pri:7, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:57:00 EET" name="checkReturnDate" finished-at="2024-11-08T23:57:03 EET" duration-ms="3321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkReturnDate -->
-        <test-method signature="randomlyChangeTheLanguage()[pri:8, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:50:45 EET" name="randomlyChangeTheLanguage" finished-at="2024-10-27T23:51:21 EET" duration-ms="35930" status="PASS">
+        <test-method signature="randomlyChangeTheLanguage()[pri:8, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:57:03 EET" name="randomlyChangeTheLanguage" finished-at="2024-11-08T23:57:34 EET" duration-ms="30375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- randomlyChangeTheLanguage -->
-        <test-method signature="checkThatThePageIsFullyLoaded()[pri:9, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:51:21 EET" name="checkThatThePageIsFullyLoaded" finished-at="2024-10-27T23:51:21 EET" duration-ms="31" status="PASS">
+        <test-method signature="checkThatThePageIsFullyLoaded()[pri:9, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:57:34 EET" name="checkThatThePageIsFullyLoaded" finished-at="2024-11-08T23:57:37 EET" duration-ms="3653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatThePageIsFullyLoaded -->
-        <test-method signature="CheckTheSortOption()[pri:10, instance:MyTestCases@5f6722d3]" started-at="2024-10-27T23:51:21 EET" name="CheckTheSortOption" finished-at="2024-10-27T23:51:24 EET" duration-ms="3317" status="PASS">
+        <test-method signature="CheckTheSortOption()[pri:10, instance:MyTestCases@24d09c1]" started-at="2024-11-08T23:57:37 EET" name="CheckTheSortOption" finished-at="2024-11-08T23:57:45 EET" duration-ms="7876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckTheSortOption -->
